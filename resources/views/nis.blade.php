@@ -159,12 +159,12 @@
                     </p>
 
                 </div>
-                <div class="social-link">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-youtube-square"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-twitter-square"></i>
+                 <div class="social-link">
+                  <a href="https://bit.ly/Workshops_Esummit_FB"> <i class="fab fa-facebook-square"></i></a> 
+                   <a href="https://bit.ly/Workshops_Esummit_IG"><i class="fab fa-instagram-square"></i></a> 
+                    <a href="https://www.youtube.com/c/EntrepreneurshipCellNITBhopal"><i class="fab fa-youtube-square"></i></a>
+                   <a href="https://bit.ly/Workshops_Esummit_LI"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://bit.ly/Workshops_Esummit_TWT"><i class="fab fa-twitter-square"></i></a>
                 </div>
 
             </div>

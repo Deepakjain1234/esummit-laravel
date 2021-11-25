@@ -1009,7 +1009,9 @@ body
     border-radius: 50%;
 }
   }
-
+  .form-left img {
+    height: 154px;
+}
 
   
    

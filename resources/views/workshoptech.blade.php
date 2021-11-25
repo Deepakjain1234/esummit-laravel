@@ -8,6 +8,8 @@
     <title>Technical-Workshop</title>
     <link rel="stylesheet" href="/assets/css/event.css">
     <script src="https://kit.fontawesome.com/5ee2cb3094.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,49 +56,13 @@
                 </div>
                 <div class="about-content">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos inventore? Sed quisquam
-                        quibusdam voluptatibus deserunt aspernatur deleniti dolores voluptas ab porro labore at, maxime
-                        eaque totam molestias autem, accusantium aut, assumenda amet dolorem? Incidunt ipsum debitis
-                        odit et
-                        quis ex natus explicabo doloremque, sed voluptate praesentium nostrum delectus, culpa laboriosam
-                        accusantium quibusdam, vel sapiente eaque nesciunt atque? Odit, hic? Labore in vero nostrum
-                        debitis
-                        aspernatur eveniet similique. Aliquid unde corporis debitis, beatae labore enim! Eligendi, aut a
-                        sint earum eos, unde iste vel error quos adipisci quod numquam ab nesciunt architecto similique
-                        accusantium voluptatibus inventore hic? Aliquid, cupiditate. Labore magni quod sit. Qui
-                        asperiores,
-                        velit magni autem a sit laudantium magnam ea error cupiditate expedita quia veritatis accusamus
-                        repellendus rerum consectetur perspiciatis quibusdam. Dolores totam quos voluptatum autem
-                        consequatur amet eius enim?
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos inventore? Sed quisquam
-                        quibusdam voluptatibus deserunt aspernatur deleniti dolores voluptas ab porro labore at, maxime
-                        eaque totam molestias autem, accusantium aut, assumenda amet dolorem? Incidunt ipsum debitis
-                        odit et
-                        quis ex natus explicabo doloremque, sed voluptate praesentium nostrum delectus, culpa laboriosam
-                        accusantium quibusdam, vel sapiente eaque nesciunt atque? Odit, hic? Labore in vero nostrum
-                        debitis
-                        aspernatur eveniet similique. Aliquid unde corporis debitis, beatae labore enim! Eligendi, aut a
-                        sint earum eos, unde iste vel error quos adipisci quod numquam ab nesciunt architecto similique
-                        accusantium voluptatibus inventore hic? Aliquid, cupiditate. Labore magni quod sit. Qui
-                        asperiores,
-                        velit magni autem a sit laudantium magnam ea error cupiditate expedita quia veritatis accusamus
-                        repellendus rerum consectetur perspiciatis quibusdam. Dolores totam quos voluptatum autem
-                        consequatur amet eius enim?
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos inventore? Sed quisquam
-                        quibusdam voluptatibus deserunt aspernatur deleniti dolores voluptas ab porro labore at, maxime
-                        eaque totam molestias autem, accusantium aut, assumenda amet dolorem? Incidunt ipsum debitis
-                        odit et
-                        quis ex natus explicabo doloremque, sed voluptate praesentium nostrum delectus, culpa laboriosam
-
-                        <br>
+                       Technical workshop
 
                     </p>
                 </div>
             </div>
 
-            <div class="about1">
+            <!-- <div class="about1">
                 <div class="rotate">
                     <div class="about-head2">
                         <h1>ELIGIBILITY</h1>
@@ -123,7 +89,7 @@
 
                     </p>
                 </div>
-            </div>
+            </div> -->
 
 
             
@@ -149,42 +115,36 @@
             <div class="form-right">
 
                 <h1>Register</h1>
-                <form action="">
+                <form  >
                     <label for="name">Name</label>
-                    <input type="text">
-                    <label for="collage">Collage</label>
-                    <input type="text">
-                    <label for="Course">Course</label>
-                    <input type="text">
-                    <label for="Branch">Branch</label>
-                    <input type="text">
+                    <input  type="text" id="name">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email">
+                    <label for="number">Whatsapp Number</label>
+                    <input type="number" id="number">
+                    <label for="collage">College</label>
+                    <input type="text" id="college">
+
+                    <!-- <label for="Branch">Branch</label>
+                    <input type="text"> -->
                     <label for="Year">Year</label>
-                    <select id="Year" name="Year">
+                    <select id="Year" name="Year" >
                         <option value="First">First</option>
                         <option value="Second">Second</option>
                         <option value="Third">Third</option>
                         <option value="fourth">fourth</option>
                         <option value="Other">Other</option>
                     </select>
-                    <label for="number">Whatsapp Number</label>
-                    <input type="number">
-    
-                    <label for="Email">Email</label>
-                    <input type="email">
-    
-                    <!-- <label for="exp">How much knowledge do you have about entrepreneurship</label>
-                    <select id="exp" name="exp">
-                      <option value="Beginner">Beginner</option>
-                      <option value="Intermediate">Intermediate</option>
-                      <option value="Advanced">Advanced</option>
-                      <option value="other">other</option>
-                    </select> -->
+
+                    <label for="Course">Course</label>
+                    <input type="text" id="course">
+
                     <label for="qna">Questions/topics you want to ask from our speakers</label>
-                    <input type="text">
-                    
+                    <input type="text" id="qna">
+
                     <input type="submit" id="submit-btn">
-    
-    
+
+
                 </form>
             </div>
         </div>
@@ -200,6 +160,31 @@
     inline: "nearest",
   });
 });
+
+$('#submit-btn').on('click', function (e) {
+           e.preventDefault();
+           
+            var data = {};
+            
+            data['name'] = $('#name').val()
+            data['email'] = $('#email').val()
+            data['number'] = $('#number').val()
+            data['college'] = $('#college').val()
+            data['year'] = $('#Year').val()
+            data['course'] = $('#course').val()
+            data['qna'] = $('#qna').val()
+            
+            console.log(data)
+            $.ajax({
+                url: "/api/TechWorkshop",
+                type: "POST",
+                data: data,
+                success: function (response) {
+                    alert(response);
+                    console.log("Sudde34jn;4")
+                }
+            })
+        })
     </script>
 
 </body>

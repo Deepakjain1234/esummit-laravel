@@ -8,6 +8,8 @@
     <title>Workshops</title>
     <link rel="stylesheet" href="/assets/css/event.css">
     <script src="https://kit.fontawesome.com/5ee2cb3094.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -96,7 +98,7 @@
                         <div class="speaker-left">
 
                             <p>
-                            <h3>Nishank bhatia</h3>
+                            <a href="/nis"><h3>Nishank bhatia</h3></a>
 
                             For my introduction, I run a Direct Selling Business ( FMCG sector) and I am a Business
                             Strategist/Consultant to a lifestyle activewear brand , an organic food brand and a textile
@@ -112,7 +114,7 @@
 
                         </div>
                         <div class="speaker-right">
-                            <img src="assets/speaker/nis.jpeg" alt="">
+                            <a href="/nis"><img src="assets/speaker/nis.jpeg" alt=""></a>
                         </div>
                     </div>
 
@@ -120,12 +122,12 @@
                     <div class="speaker-box1">
 
                         <div class="speaker-right">
-                            <a href="soni.html"><img src="assets/speaker/soni.jpeg" alt=""></a>
+                            <a href="/soni"><img src="assets/speaker/soni.jpeg" alt=""></a>
                         </div>
                         <div class="speaker-left">
 
                             <p>
-                           <a href="soni.html">
+                           <a href="/soni">
                             <h3> Mr. Bhavpreet Singh Soni</h3>
                            </a>
 
@@ -149,8 +151,7 @@
                         <div class="speaker-left">
 
                             <p>
-                            <h3>Abhishek Rana</h3>
-
+                            <a href="/rana"><h3>Abhishek Rana</h3></a>
                             Abhishek Rana , 23 years , is Founder and CEO of Codenera . With just 3 people , he has
                             scaled his company to more then 100 people within a year . With most of his work in
                             education , his company trains and places students into various MNC. And is one of top most
@@ -159,7 +160,7 @@
 
                         </div>
                         <div class="speaker-right">
-                            <img src="assets/speaker/rana.jpeg" alt="">
+                            <a href="/rana"><img src="assets/speaker/rana.jpeg" alt=""></a>
                         </div>
                     </div>
 
@@ -251,20 +252,20 @@
             <div class="form-right">
 
                 <h1>Register</h1>
-                <form action="">
+                <form  >
                     <label for="name">Name</label>
-                    <input type="text">
+                    <input  type="text" id="name">
                     <label for="Email">Email</label>
-                    <input type="email">
+                    <input type="email" id="email">
                     <label for="number">Whatsapp Number</label>
-                    <input type="number">
+                    <input type="number" id="number">
                     <label for="collage">College</label>
-                    <input type="text">
+                    <input type="text" id="college">
 
                     <!-- <label for="Branch">Branch</label>
                     <input type="text"> -->
                     <label for="Year">Year</label>
-                    <select id="Year" name="Year">
+                    <select id="Year" name="Year" >
                         <option value="First">First</option>
                         <option value="Second">Second</option>
                         <option value="Third">Third</option>
@@ -273,7 +274,7 @@
                     </select>
 
                     <label for="Course">Course</label>
-                    <input type="text">
+                    <input type="text" id="course">
 
 
 
@@ -286,7 +287,7 @@
                         <!-- <option value="other">other</option> -->
                     </select>
                     <label for="qna">Questions/topics you want to ask from our speakers</label>
-                    <input type="text">
+                    <input type="text" id="qna">
 
                     <input type="submit" id="submit-btn">
 
@@ -306,6 +307,34 @@
                 inline: "nearest",
             });
         });
+
+
+
+        $('#submit-btn').on('click', function (e) {
+           e.preventDefault();
+           
+            var data = {};
+            
+            data['name'] = $('#name').val()
+            data['email'] = $('#email').val()
+            data['number'] = $('#number').val()
+            data['college'] = $('#college').val()
+            data['year'] = $('#Year').val()
+            data['course'] = $('#course').val()
+            data['experience'] = $('#exp').val()
+            data['qna'] = $('#qna').val()
+            
+            console.log(data)
+            $.ajax({
+                url: "/api/BWorkshop",
+                type: "POST",
+                data: data,
+                success: function (response) {
+                    alert(response);
+                    console.log("Sudde34jn;4")
+                }
+            })
+        })
     </script>
 
 </body>

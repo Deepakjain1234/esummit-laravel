@@ -194,7 +194,7 @@
                         <div class="orange-box">
                             <h1> Startup Expo</h1>
                             <img src="assets/image/ironman.png" alt="">
-                            <a href="startup.html"><button>Register</button></a>  
+                            <a href="/startup"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -202,7 +202,7 @@
                         <div class="orange-box">
                             <h1> Hackathon</h1>
                             <img src="assets/image/spiderman.png" alt="">
-                            <a href="hackathon.html"><button>Register</button></a>  
+                            <a href="/hackthon"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -210,7 +210,7 @@
                         <div class="orange-box">
                             <h1> IPL Auction</h1>
                             <img src="assets/image/thor event.png" alt="">
-                            <a href="ipl.html"><button>Register</button></a>   
+                            <a href="ipl"><button>Register</button></a>   
                         </div>
                     </div>
 
@@ -218,7 +218,7 @@
                         <div class="orange-box">
                             <h1>Content Conclave</h1>
                             <img src="assets/image/dr. strange event.png" alt="">
-                            <a href="content.html"><button>Register</button></a>  
+                            <a href="/content"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -226,7 +226,7 @@
                         <div class="orange-box">
                             <h1>Workshops</h1>
                             <img src="assets/image/nick-fury workshop.png" alt="">
-                            <a href="wokshop.html"><button>Register</button></a>  
+                            <a href="/workshop"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -234,7 +234,7 @@
                         <div class="orange-box">
                             <h1>Stock Trading</h1>
                             <img src="assets/image/loki event.png" alt="">
-                            <a href="stock.html"><button>Register</button></a>  
+                            <a href="/stock"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -242,7 +242,7 @@
                         <div class="orange-box">
                             <h1>Business Plan</h1>
                             <img src="assets/image/about.png" alt="">
-                            <a href="bplan.html"><button>Register</button></a>  
+                            <a href="/bplan"><button>Register</button></a>  
                         </div>
                     </div>
 
@@ -250,7 +250,7 @@
                         <div class="orange-box">
                             <h1>Crypto Trading</h1>
                             <img src="assets/image/black panther event.png" alt="">
-                            <a href="crypto.html"><button>Register</button></a>  
+                            <a href="/crypto"><button>Register</button></a>  
                         </div>
                     </div>
                     
@@ -681,11 +681,11 @@
 
                 </div>
                 <div class="social-link">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-youtube-square"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-twitter-square"></i>
+                  <a href="https://bit.ly/Workshops_Esummit_FB"> <i class="fab fa-facebook-square"></i></a> 
+                   <a href="https://bit.ly/Workshops_Esummit_IG"><i class="fab fa-instagram-square"></i></a> 
+                    <a href="https://www.youtube.com/c/EntrepreneurshipCellNITBhopal"><i class="fab fa-youtube-square"></i></a>
+                   <a href="https://bit.ly/Workshops_Esummit_LI"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://bit.ly/Workshops_Esummit_TWT"><i class="fab fa-twitter-square"></i></a>
                 </div>
 
             </div>
