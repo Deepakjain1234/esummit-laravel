@@ -1,0 +1,281 @@
+html
+{
+    margin: 0px;
+}
+body
+{
+    margin: 0px;
+}
+
+.nav-menu.active {
+    left: 0;
+    top: 124px;
+    z-index: 23;
+}
+p
+{
+    text-align: justify
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
+
+.speaker
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#speak-box
+{
+
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.left-speaker
+{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-box
+{
+ height: 350px;
+ width: 350px;
+ border-radius: 50%;
+}
+.image-box img
+{
+ height: 350px;
+ width: 350px;
+ border-radius: 50%;
+}
+.right-speaker
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    ;
+}
+
+.speaker-head h1
+{
+    font-size: 45px;
+}
+.digital-cont h2
+{
+    font-size: 30px;
+    margin: 17px 0px;
+    color: rgb(250, 102, 33);;
+}
+
+
+
+
+#about-spk
+{
+    font-size: 18px;
+}
+
+
+
+
+
+.card {
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    width: 360px;
+    height: 360px;
+    border-radius: 180px;
+    background: #000;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 360px;
+    height: 360px;
+    transition: .5s;
+    border-radius: 180px;
+}
+.card:hover .image img {
+    opacity: .5;
+    /* transform: translateX(30%); */
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    border-radius: 180px;
+    height: 100%;
+    /* background: #ffc107; */
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card .details .center ul li a:hover {
+    background: #ff3636;
+}
+#about-spk {
+    font-size: 18px;
+    /* padding: 0px 19px; */
+    padding-right: 23px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .speaker-head h1 {
+        font-size: 38px;
+    }
+    .digital-cont h2 {
+        font-size: 23px;
+        margin: 17px 0px;
+        color: rgb(250, 102, 33);
+    }
+    #about-spk {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    #speak-box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-speaker {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-speaker {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    .card .image img {
+        width: 290px;
+        height: 290px;
+        transition: .5s;
+        border-radius: 180px;
+    }
+    .card .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        border-radius: 180px;
+        height: 290px;
+        /* background: #ffc107; */
+        transition: .5s;
+        transform-origin: left;
+        transform: perspective(2000px) rotateY(-90deg);
+    }
+    .card {
+        position: absolute;
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+        width: 290px;
+        height: 290px;
+        border-radius: 180px;
+        background: #000;
+    }
+    .left-speaker {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-speaker {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+
+    .speaker-head h1 {
+        font-size: 25px;
+    }
+
+    .digital-cont h2 {
+        font-size: 18px;
+        margin: 14px 0px;
+        color: rgb(250, 102, 33);
+    }
+    
+    
+}
